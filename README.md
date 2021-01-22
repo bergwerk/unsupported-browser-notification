@@ -17,7 +17,7 @@ To show someone who is still using IE or Edge (not Chromium based) that the site
 Include the plugin's script at the bottom ot the HTML body: 
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification/dist/notification.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification@1.0.0-alpha.0/dist/notification.js"></script>
 ```
 
 If you want to overwrite some default options, you have the possibility to define `ubnOptions` on the `window` object.
@@ -30,19 +30,19 @@ It's important that you define the options before you include the file.
         showNotification: ['ie', 'chrome']
     }
 </script>
-<script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification/dist/notification.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification@1.0.0-alpha.0/dist/notification.js"></script>
 ```
 
 ### Option 2: Call the plugin
 
 Include the plugins's UMD script at the bottom of the HTML body:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification/dist/notification.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification@1.0.0-alpha.0/dist/notification.umd.js"></script>
 ```
 
 Call the plugin. Pass the options to the plugin initialization.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification/dist/notification.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification@1.0.0-alpha.0/dist/notification.umd.js"></script>
 <script>
     var notification = new UnsupportedBrowserNotification({
         showNotification: ['ie', 'chrome']
