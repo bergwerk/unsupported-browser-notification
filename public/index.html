@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+
+    <title>Unsupported Browser Notification</title>
+</head>
+<body>
+
+<script>
+    window.ubnOptions = {
+        showNotification: ['ie', 'edge', 'chrome']
+    }
+</script>
+<script src='../dist/notification.js'></script>
+</body>
+</html>
