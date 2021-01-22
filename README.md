@@ -4,6 +4,8 @@
 
 With Internet Explorer becoming less prevalent and frameworks like Bootstrap 5 also dropping support for IE 10 and IE 11, it makes less and less sense to support these browsers.
 
+![Preview](https://user-images.githubusercontent.com/13386633/105519014-3d3d0580-5cd9-11eb-980a-d324c0eaaec1.png)
+
 To show someone who is still using IE or Edge (not Chromium based) that the site is not actually broken (it' only for him broken), the plugin gives the possibility to show the user a short message that he is using a browser that is no longer supported.
 
 ## Install
