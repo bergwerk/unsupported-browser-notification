@@ -27,7 +27,7 @@ It's important that you define the options before you include the file.
 <script>
     window.ubnOptions = {
         title: 'Uppps. Your browser is to old ...',
-        showNotification: ['ie', 'chrome']
+        showNotification: ['ie']
     }
 </script>
 <script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification@1.0.0-alpha.0/dist/notification.js"></script>
@@ -45,7 +45,7 @@ Call the plugin. Pass the options to the plugin initialization.
 <script src="https://cdn.jsdelivr.net/gh/bergwerk/unsupported-browser-notification@1.0.0-alpha.0/dist/notification.umd.js"></script>
 <script>
     var notification = new UnsupportedBrowserNotification({
-        showNotification: ['ie', 'chrome']
+        showNotification: ['ie']
     });
 
     notification.init();
@@ -63,7 +63,7 @@ cssPrefix: 'ubn',
 lang: 'auto', // Language key e.g. 'en', 'de'
 translations: {
     en: {
-        title: 'Uppps. Your browser is to old ...',
+        title: 'Uppps. Your browser is too old ...',
         description: 'We recommend that you use a newer version!'
     }
 },
