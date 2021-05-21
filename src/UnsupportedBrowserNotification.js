@@ -45,15 +45,19 @@ class UnsupportedBrowserNotification {
         const htmlTag = document.getElementsByTagName('html')[0];
         const lang = htmlTag.getAttribute('lang') || htmlTag.getAttribute('xml:lang');
 
+        let detectedLanguage = this.options.lang;
+
         if (this.options.lang === 'auto' && lang) {
-            return lang;
+            // We are only interested in the language, so the country can be removed if string is based on RFC 1766 / 3066
+            detectedLanguage = lang.substring(0, 2);
         } else if (this.options.lang === 'auto') {
             console.warn('The language could not be automatically detected. Please use the option \'lang\' to set it manually. The fallback goes automatically to \'en\' for english.')
 
-            return 'en';
+            // Fallback
+            detectedLanguage = 'en';
         }
 
-        return this.options.lang;
+        return detectedLanguage;
     }
 
     /**
